@@ -5,9 +5,7 @@ const iceCreamActions =
 
 console.log("Initial state: ", store.getState());
 
-const unSubscribe = store.subscribe(() => {
-  console.log(store.getState());
-});
+const unSubscribe = store.subscribe(() => {});
 
 store.dispatch(cakeActions.ordered(1));
 store.dispatch(iceCreamActions.ordered(2));
